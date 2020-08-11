@@ -1,0 +1,11 @@
+Django Tutorial Notes ==========================================================
+
+- test logins: (dan, admin123), (TestUser, testing321)
+
+- 'python manage.py runserver' will start up the django development server
+    + This server is not intended for a production environment
+
+- 'python manage.py createsuperuser' will create a new admin user (requires db migrations)
+    + 'python manage.py makemigrations' will detect changes and prepare django to update database
+    + 'python manage.py migrate' will then perform the migration tasks
+    
