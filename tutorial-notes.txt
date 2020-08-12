@@ -7,5 +7,17 @@ Django Tutorial Notes ==========================================================
 
 - 'python manage.py createsuperuser' will create a new admin user (requires db migrations)
     + 'python manage.py makemigrations' will detect changes and prepare django to update database
+        -- 'python manage.py sqlmigrate <app name> <migration number>' will display SQL code that
+            is generated for the migration command, based on chosen sql type (e.g. sqlite3)
     + 'python manage.py migrate' will then perform the migration tasks
-    
+        -- Migrations allow changes to a db even after it is created and has data within it
+        
+- 'python manage.py shell' will open a python interactive prompt to work with django objects
+    + Can then import models and query db through the object relational mapper (ORM)
+        -- 'User.objects.all()' will return a QuerySet list of all User objects, or usernames
+        -- 'User.objects.first()' will just return the first result
+        -- 'User.objects.filter(username='<username>')' will allow filtering queries
+            by using parameters specific to that object. May return multiple results.
+        -- Model objects can be created and then saved with the '.save()' method
+            ++ Ex: 'post_2 = Post(title='Blog 2', content='Second Post Content!', author=User.objects.last())'
+    + Watch tutorial 5 for info on handling sql queries
