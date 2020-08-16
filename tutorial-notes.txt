@@ -21,3 +21,10 @@ Django Tutorial Notes ==========================================================
         -- Model objects can be created and then saved with the '.save()' method
             ++ Ex: 'post_2 = Post(title='Blog 2', content='Second Post Content!', author=User.objects.last())'
     + Watch tutorial 5 for info on handling sql queries
+    
+- 'admin.site.register(<model name>)' can be added to app 'admin.py' file to register model for use with admin page.
+    + Allows adding new items to db as well as editing existing ones through the django admin feature.
+
+- '{% csrf_token %}' is required for django forms
+    + cross-site request forgery protection
+        -- Attack that forces end-user to execute unwanted actions on a web application
