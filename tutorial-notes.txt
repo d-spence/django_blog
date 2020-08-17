@@ -27,4 +27,5 @@ Django Tutorial Notes ==========================================================
 
 - '{% csrf_token %}' is required for django forms
     + cross-site request forgery protection
-        -- Attack that forces end-user to execute unwanted actions on a web application
+        -- Attack that forces end-user to execute unwanted actions on a web application.
+
