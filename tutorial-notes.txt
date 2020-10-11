@@ -1,6 +1,6 @@
 Django Tutorial Notes ==========================================================
 
-- test logins: (dan, admin123), (TestUser, testing321), (TestUser2, testing456)
+- test logins: (dan, Admin321), (TestUser, testing321), (TestUser2, testing456)
 
 - 'python manage.py runserver' will start up the django development server
     + This server is not intended for a production environment
